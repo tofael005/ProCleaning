@@ -3,7 +3,7 @@ import Banner from '../../Navbar/Banner';
 
 const Home = () => {
     return (
-        <div className=''>
+        <div>
             <Banner />
         </div>
     );
