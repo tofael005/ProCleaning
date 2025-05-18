@@ -5,8 +5,6 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 import { MdOutlineEmail } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 import { FaFacebook, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
-
-
 import logo from "../assets/logo.png"
 
 const Navbar = () => {
@@ -38,21 +36,17 @@ const Navbar = () => {
                 </div>
             </div>
 
-
-
             <div className='border-b bg-blue-950 text-white'>
                 <div className='flex justify-between container mx-auto p-3 items-center '>
                     <Link to="/">
                         <img className='w-[200px]' src={logo} alt="" />
                     </Link>
 
-
                     <span className='md:hidden'>
                         {
                             toggle ? <AiOutlineCloseCircle className='text-2xl' onClick={() => setToggle(!toggle)} /> : <GiHamburgerMenu className="text-2xl" onClick={() => setToggle(!toggle)} />
                         }
                     </span>
-
 
                     <div className={`flex items-center duration-300 flex-col py-5 md:p-0  bg-opacity-100 top-[72px] text-white bg-black md:bg-transparent w-full text-center md:w-auto md:flex-row md:gap-6 absolute md:static z-50 ${toggle ? "left-0" : "-left-full"}`}>
                         <ul className="flex flex-col md:flex-row md:gap-6 font-semibold items-center">

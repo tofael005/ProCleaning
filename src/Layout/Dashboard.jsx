@@ -1,14 +1,14 @@
-import { Outlet } from "react-router";
-
-
+import React from 'react';
+import { Outlet } from 'react-router';
+import Admin from '../Dashboard/Admin';
 
 const Dashboard = () => {
     return (
-        <div className="flex">
+        <div>
             <div>
                 <Admin />
             </div>
-            <div className="md:w-[87%] w-full bg-sky-50">
+            <div>
                 <Outlet />
             </div>
         </div>

@@ -4,14 +4,20 @@ import Home from "../Pages/Home/Home";
 import Service from "../Pages/Service/Service";
 import Contact from "../Pages/Contact/Contact";
 import About from "../Pages/About";
-import PrivateRouter from "../Private/PrivateRoute";
-import Dasshboard from "../Layout/Dasshboard";
-import Admin from "../Dashboard/Admin";
+import Error from "../Pages/Error";
 import Login from "../Log/Login";
+import Dashboard from "../Layout/Dashboard";
+import Admin from "../Dashboard/Admin";
+import PrivateRouter from "../Private/PrivateRoute";
+import ErrorrAdmin from "../Dashboard/ErrorrAdmin";
+
+
+
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Root />,
+        errorElement: <Error />,
         children: ([
             {
                 path: "/",
@@ -37,9 +43,10 @@ const router = createBrowserRouter([
     },
     {
         path: "/dashboard",
+        errorElement: <ErrorrAdmin />,
         element:
         <PrivateRouter>
-            <Dasshboard />
+            <Dashboard />
         </PrivateRouter>,
         children: [
             {
@@ -48,7 +55,6 @@ const router = createBrowserRouter([
             }
         ]
     }
-    
 ])
 
 export default router;
