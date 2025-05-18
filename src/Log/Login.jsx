@@ -2,7 +2,6 @@ import { useState } from "react";
 import banner from "../assets/product/banner3.jpeg"
 import Swal from "sweetalert2";
 import { signInWithEmailAndPassword } from "firebase/auth";
-// import { useAuth } from "../firebase/AuthProvider";
 import { useNavigate } from "react-router";
 import { auth } from "../firebase/Firebase.config";
 
