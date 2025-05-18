@@ -1,8 +1,9 @@
 // import { useContext } from 'react';
-import { useAuth } from '../Firebase/AuthProvider';
+import { Navigate, useLocation } from 'react-router';
+// import { useAuth } from '../Firebase/AuthProvider';
 import Loader from '../Pages/Loader';
-// import { useAuth } from '../firebase/AuthProvider';
-import { Navigate, useLocation } from 'react-router-dom';
+import { useAuth } from '../Firebase/AuthProvider';
+
 
 
 
