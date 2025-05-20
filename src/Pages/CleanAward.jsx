@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { FaChalkboardTeacher } from "react-icons/fa";
+
 const CleanAward = () => {
     return (
         <div className='bg-green-950 mt-10'>
@@ -8,8 +10,8 @@ const CleanAward = () => {
                     <p>DEEP CLEANING <br /> IN YOUR CITY</p>
                 </div>
                 <div>
-                    <div>
-                        
+                    <div className='flex gap-3'>
+                        <FaChalkboardTeacher />
                         <div>
                             <p>950+</p>
                             <p>Happy Client</p>
