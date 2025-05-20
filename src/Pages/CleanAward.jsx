@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { FaChalkboardTeacher, FaAward  } from "react-icons/fa";
+import { BsFillHouseGearFill, BsMicrosoftTeams } from "react-icons/bs";
 
 
 const CleanAward = () => {
@@ -21,10 +22,18 @@ const CleanAward = () => {
                     <div className='flex gap-3'>
                         <FaAward  />
                         <div>
-                            <p>950+</p>
-                            <p>Happy Client</p>
+                            <p>60+</p>
+                            <p>Awards Winner</p>
                         </div>
                     </div>
+                    <div className='flex gap-3'>
+                        <BsFillHouseGearFill  />
+                        <div>
+                            <p>450+</p>
+                            <p>Complete Project</p>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
