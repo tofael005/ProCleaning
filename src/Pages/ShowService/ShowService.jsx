@@ -1,38 +1,46 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
+import { FaArrowRight } from "react-icons/fa";
+import { Link } from 'react-router';
 
-const ShowService = ({ service }) => {
-  const { title, category, description, icon, image } = service;
+const ShowService = () => {
+  const [data, setData] = useState([]);
+
+
+  useEffect(() => {
+    fetch("../../../public/sevice.json")
+      .then((res) => res.json())
+      .then((data) => setData(data));
+  }, []);
+
   return (
-    <div className="mx-auto border border-transparent hover:border-green-400 transition-all duration-300">
-      <div className="bg-white drop-shadow-xl w-[350px] rounded-md \">
-        <img className="md:h-[200px] w-full" src={image} alt="" />
+    <div>
+      <div className="py-5">
+        <h1 className="text-green-500 text-bold text-xl text-center mt-6">
+          --CLEANING SERVICE--
+        </h1>
+        <h1 className="text-[#013E43] text-bold text-3xl font-bold md:text-3xl text-center">
+          Our Excellent Service
+        </h1>
 
-        <div className="p-10">
-            <div className="flex justify-between ">
-          <div>
-            <h1 className="text-green-500 font-bold text-lg">{category}</h1>
-            <h1 className="text-black text-xl font-bold">{title}</h1>
-          </div>
+        <div className="grid md:grid-cols-4 gap-4 container mx-auto mt-8">
+          {data.map(service => (
+            <div className="hover:shadow-xl border border-gray-300  rounded-md shadow-black/10 cursor-pointer  duration-200" key={service.i}>
+              <img className="w-full h-[200px] rounded-t-md " src={service.image} alt="" />
+              <div className="p-4">
+                <p className="mt-2 text-sm font-semibold">{service.subtitle}</p>
+                <h1 className=" text-xl my-1 font-bold text-green-600">{service.title}</h1>
+                <p>{service.description}</p>
 
-          <div>
-            <img className="w-[50px]" src={icon} alt="" />
-          </div>
+                <hr className='my-3' />
+
+                <Link>
+                  <input className='bg-green-600 hover:bg-green-950 duration-200 w-full mx-auto text-sm text-white p-2 rounded-full cursor-pointer' type="button" value="Get Service" />
+                </Link>
+              </div>
+            </div>
+          ))}
         </div>
-        {/*  */}
-
-        <div className="relative mt-8 w-full">
-          {/* Dotted line */}
-          <hr className="border-t-2 border-dotted border-gray-300 w-full" />
-          <div className="absolute top-0 right-0 h-0.5 w-[48px] bg-[#D3D4D9]" />
-        </div>
-        {/*  */}
-        <p className="mt-5 text-gray-600">{description}</p>
-
-        <button className="w-full h-[50px] mx-auto bg-green-500 hover:bg-green-400
-        mt-4 rounded-md">Get Service</button>
       </div>
-        </div>
-    
     </div>
   );
 };

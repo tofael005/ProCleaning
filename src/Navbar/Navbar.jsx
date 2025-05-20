@@ -51,7 +51,7 @@ const Navbar = () => {
                     <div className={`flex items-center duration-300 flex-col py-5 md:p-0  bg-opacity-100 top-[72px] text-white bg-black md:bg-transparent w-full text-center md:w-auto md:flex-row md:gap-6 absolute md:static z-50 ${toggle ? "left-0" : "-left-full"}`}>
                         <ul className="flex flex-col md:flex-row md:gap-6 font-semibold items-center">
                             <Link to="/" className='hover:border-b border-green-400 py-2'><li>Home</li></Link>
-                            <Link to="/service" className='hover:border-b border-green-400 py-2'><li>Services</li></Link>
+                            <Link to="/showService" className='hover:border-b border-green-400 py-2'><li>Services</li></Link>
                             <Link to="/about" className='hover:border-b border-green-400 py-2'><li>About</li></Link>
                             <Link to="/contact" className='hover:border-b border-green-400 py-2'><li>Contact</li></Link>
                         </ul>

@@ -46,15 +46,6 @@ const About = () => {
                     </div>
                 </div>
             </div>
-
-
-            <div>
-                <div>
-                    <p>---ABOUT CLEANING</p>
-                    <p>Excellent Service
-                        cleaning</p>
-                </div>
-            </div>
         </div>
     );
 };

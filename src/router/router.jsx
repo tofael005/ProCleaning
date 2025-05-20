@@ -10,6 +10,8 @@ import Dashboard from "../Layout/Dashboard";
 import Admin from "../Dashboard/Admin";
 import PrivateRouter from "../Private/PrivateRoute";
 import ErrorrAdmin from "../Dashboard/ErrorrAdmin";
+import ShowService from "../Pages/ShowService/ShowService";
+import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 
 
 
@@ -27,6 +29,14 @@ const router = createBrowserRouter([
                 path: "/service",
                 element: <Service />
             },
+            {
+                path: "service_Details",
+                element: <ServiceDetails />
+              },
+              {
+                path: "/showService",
+                element: <ShowService />
+              },
             {
                 path: "/about",
                 element: <About />
