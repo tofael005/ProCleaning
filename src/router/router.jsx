@@ -10,51 +10,56 @@ import Dashboard from "../Layout/Dashboard";
 import Admin from "../Dashboard/Admin";
 import PrivateRouter from "../Private/PrivateRoute";
 import ErrorrAdmin from "../Dashboard/ErrorrAdmin";
-
-
+import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 
 const router = createBrowserRouter([
-    {
+  {
+    path: "/",
+    element: <Root />,
+    errorElement: <Error />,
+    children: [
+      {
         path: "/",
-        element: <Root />,
-        errorElement: <Error />,
-        children: ([
-            {
-                path: "/",
-                element: <Home />
-            },
-            {
-                path: "/service",
-                element: <Service />
-            },
-            {
-                path: "/about",
-                element: <About />
-            },
-            {
-                path: "/contact",
-                element: <Contact />
-            },
-            {
-                path: "/login",
-                element: <Login />
-            }
-        ])
-    },
-    {
+        element: <Home />,
+      },
+      {
+        path: "/service",
+        element: <Service />,
+      },
+      {
+        path: "service/:id",
+        element: <ServiceDetails></ServiceDetails>,
+        loader: () => fetch("/service.json"),
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+    ],
+  },
+  {
+    path: "/dashboard",
+    errorElement: <ErrorrAdmin />,
+    element: (
+      <PrivateRouter>
+        <Dashboard />
+      </PrivateRouter>
+    ),
+    children: [
+      {
         path: "/dashboard",
-        errorElement: <ErrorrAdmin />,
-        element:
-        <PrivateRouter>
-            <Dashboard />
-        </PrivateRouter>,
-        children: [
-            {
-                path: "/dashboard",
-                element: <Admin />
-            }
-        ]
-    }
-])
+        element: <Admin />,
+      },
+    ],
+  },
+]);
 
 export default router;

@@ -7,7 +7,7 @@ const Service = () => {
   const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
-    fetch("../../../public/cleaningServise.json")
+    fetch("../../../public/Service.json")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
@@ -52,3 +52,4 @@ const Service = () => {
 };
 
 export default Service;
+
