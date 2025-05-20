@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { FaChalkboardTeacher } from "react-icons/fa";
+import { FaChalkboardTeacher, FaAward  } from "react-icons/fa";
+
 
 const CleanAward = () => {
     return (
@@ -12,6 +13,13 @@ const CleanAward = () => {
                 <div>
                     <div className='flex gap-3'>
                         <FaChalkboardTeacher />
+                        <div>
+                            <p>950+</p>
+                            <p>Happy Client</p>
+                        </div>
+                    </div>
+                    <div className='flex gap-3'>
+                        <FaAward  />
                         <div>
                             <p>950+</p>
                             <p>Happy Client</p>
