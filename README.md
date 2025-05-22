@@ -1,27 +1,28 @@
 # How to use technologies in this project.
 
 # Front-End
-- React Vite
+- React Vite *
 - Tailwind CSS
-- JavaScript
+- JavaScript *
+- React Router Dom *
 - React icons
 - Swiper
 - Loader
 - Swal
-- Firebase Authentication
+- Firebase Authentication *
 - Dot ENV
 - AOS Animation
-- axios
+- Axios *
 - Error page not found
 
 
 # Backend
-- Mongodb
-- Express
-- Cors
-- Nodemon
+- Mongodb *
+- Express JS * 
+- Cors *
+- Nodemon * 
 - Dot ENV
-- Moongose
+- Moongose *
 
 
 
@@ -39,7 +40,7 @@
 
 
 # Admin Panel
-- Loging (email, google, facbook)
+- Loging (email, google)
 - All Service count with Dynamically
 - All Client count
 - Create Service

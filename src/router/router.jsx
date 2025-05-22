@@ -12,6 +12,11 @@ import PrivateRouter from "../Private/PrivateRoute";
 import ErrorrAdmin from "../Dashboard/ErrorrAdmin";
 import ShowService from "../Pages/ShowService/ShowService";
 import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
+import ServiceOrder from "../Dashboard/ServiceOrder";
+import ApproveCustomer from "../Dashboard/ApproveCustomer";
+import CleanningAll from "../Dashboard/CleanningAll";
+import TotalEarning from "../Dashboard/TotalEarning";
+import Settings from "../Dashboard/Settings";
 
 
 
@@ -52,7 +57,7 @@ const router = createBrowserRouter([
         ])
     },
     {
-        path: "/dashboard",
+        path: "dashboard",
         errorElement: <ErrorrAdmin />,
         element:
         <PrivateRouter>
@@ -60,8 +65,28 @@ const router = createBrowserRouter([
         </PrivateRouter>,
         children: [
             {
-                path: "/dashboard",
+                path: "dashboard",
                 element: <Admin />
+            },
+            {
+                path: "service_order",
+                element: <ServiceOrder />
+            },
+            {
+                path: "cleaning_all",
+                element: <CleanningAll />
+            },
+            {
+                path: "approve_customer",
+                element: <ApproveCustomer />
+            },
+            {
+                path: "total_earning",
+                element: <TotalEarning />
+            },
+            {
+                path: "settings",
+                element: <Settings />
             }
         ]
     }

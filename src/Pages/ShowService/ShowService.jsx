@@ -33,9 +33,11 @@ const ShowService = () => {
 
                 <hr className='my-3' />
 
-                <Link>
-                  <input className='bg-green-600 hover:bg-green-950 duration-200 w-full mx-auto text-sm text-white p-2 rounded-full cursor-pointer' type="button" value="Get Service" />
+                <Link to="/service_Details">
+                  <input className='bg-green-600 hover:bg-green-950 duration-200 w-full mx-auto text-sm text-white p-2 rounded-full' type="button" value="Get Service" />
                 </Link>
+
+
               </div>
             </div>
           ))}
