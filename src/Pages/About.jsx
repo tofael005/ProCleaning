@@ -4,12 +4,13 @@ import { MdOutlineCleaningServices } from "react-icons/md";
 import { SiCcleaner } from "react-icons/si";
 import logo from "../assets/product/pro8.jpeg"
 import { Link } from 'react-router';
+import Map from './Map';
 
 const About = () => {
     return (
         <div className='max-w-[1100px] mx-auto px-2 mt-4'>
 
-            <div className='flex md:flex-row flex-col gap-5'>
+            <div className='flex md:flex-row flex-col gap-5 mb-16'>
                 <img className='w-[550px] h-[500px] rounded-md' src={about} alt="" />
 
                 <div className=''>
@@ -46,6 +47,9 @@ const About = () => {
                     </div>
                 </div>
             </div>
+
+
+            {/* <Map /> */}
         </div>
     );
 };

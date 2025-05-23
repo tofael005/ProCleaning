@@ -7,7 +7,7 @@ const ShowService = () => {
 
 
   useEffect(() => {
-    fetch("../../../public/sevice.json")
+    fetch("/public/sevice.json")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
@@ -31,6 +31,10 @@ const ShowService = () => {
                 <h1 className=" text-xl my-1 font-bold text-green-600">{service.title}</h1>
                 <p>{service.description}</p>
 
+                <div className="flex justify-between mt-2">
+                  <p className="line-through text-red-400">BDT: 3000</p>
+                  <p className="text-lg font-bold">BDT: {service.price}</p>
+                </div>
                 <hr className='my-3' />
 
                 <Link to="/service_Details">

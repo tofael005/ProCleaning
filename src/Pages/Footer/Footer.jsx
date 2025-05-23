@@ -4,7 +4,7 @@ import logo from '../../../public/vite.png'
 
 const Footer = () => {
     return (
-        <footer className="bg-[#063f39] text-white md:p-8">
+        <footer className="bg-[#063f39] text-white mt-10 md:p-8">
             <div className="container mx-auto px-4 grid md:grid-cols-3 justify-between">
                 {/* Left Column */}
                 <div>

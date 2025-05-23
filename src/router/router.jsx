@@ -57,7 +57,7 @@ const router = createBrowserRouter([
         ])
     },
     {
-        path: "dashboard",
+        path: "/dashboard",
         errorElement: <ErrorrAdmin />,
         element:
         <PrivateRouter>
@@ -65,7 +65,7 @@ const router = createBrowserRouter([
         </PrivateRouter>,
         children: [
             {
-                path: "dashboard",
+                path: "/dashboard",
                 element: <Admin />
             },
             {

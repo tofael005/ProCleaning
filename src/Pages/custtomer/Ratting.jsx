@@ -11,7 +11,7 @@ const companies = [
 
 const Ratting = () => {
   return (
-    <div className="md:h-[440px]  bg-[#032B2A] md:p-16 text-white font-sans mb-10">
+    <div className="md:h-[440px]  bg-[#032B2A] md:p-16 mt-10 text-white font-sans mb-16">
       <section className="grid md:grid-cols-2 container">
         {/* Left Section */}
         <div className="space-y-5 mx-auto md:mx-0 md:mt-0 mt-5">

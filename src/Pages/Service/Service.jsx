@@ -7,7 +7,7 @@ const Service = () => {
 
 
   useEffect(() => {
-    fetch("../../../public/homeService.json")
+    fetch("/public/homeService.json")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
@@ -31,8 +31,12 @@ const Service = () => {
               <p className="mt-2 text-sm font-semibold">{post.subtitle}</p>
               <h1 className=" text-xl my-1 font-bold text-green-600">{post.title}</h1>
               <p>{post.description}</p>
+              <div className="flex justify-between mt-2">
+                <p className="line-through text-red-400">BDT: 3000</p>
+                <p className="text-lg font-bold">BDT: {post.price}</p>
+              </div>
             </div>
-            
+
           </div>
         ))}
       </div>

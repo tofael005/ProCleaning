@@ -4,8 +4,8 @@ import About from '../About';
 import Service from '../Service/Service';
 import CleanAward from '../CleanAward';
 import TeamMember from '../Member/TeamMember';
-import ValuableCompany from '../ValuableCompany.jsx/ValuableCompany';
 import Ratting from '../custtomer/Ratting';
+import SayCustomer from '../SayCustomer';
 
 const Home = () => {
     return (
@@ -15,8 +15,8 @@ const Home = () => {
             <Service />
             <CleanAward />
             <TeamMember />
-            <ValuableCompany />
             <Ratting />
+            <SayCustomer />
         </div>
     );
 };
