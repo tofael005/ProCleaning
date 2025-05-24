@@ -1,5 +1,5 @@
 import Swal from "sweetalert2";
-import service from "../../assets/product/pro5.webp"
+import service from "../../assets/product/banner.webp"
 import { useState } from "react";
 
 const ServiceDetails = () => {

@@ -2,10 +2,15 @@ import React from 'react';
 import { MdCleaningServices } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import Chart from './Chart';
+import { Link } from 'react-router';
 
 const Admin = () => {
     return (
         <div>
+            <div className='flex justify-between mb-2'>
+                <h1 className='text-green-600 font-bold'>DASHBOARD</h1>
+                <Link to="/" className='px-4 py-2 text-white bg-green-600 font-bold rounded-full hover:bg-green-950 duration-200'>Sign out</Link>
+            </div>
             <div className='grid md:grid-cols-4 gap-3 text-white'>
                 <div className='bg-gradient-to-r from-sky-300 to-indigo-400 p-10 text-center rounded-md'>
                     <div className='flex gap-2 text-center items-center text-white justify-center'>
