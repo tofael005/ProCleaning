@@ -25,7 +25,7 @@ const Contact = () => {
         }
         console.log(usersData)
 
-        fetch("http://localhost:8000/userData", {
+        fetch("https://pro-cleaning-server-alpha.vercel.app/userData", {
             method: "POST",
             headers: {
                 "content-type": "application/json"
