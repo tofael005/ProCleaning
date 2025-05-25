@@ -6,7 +6,7 @@ const Error = () => {
     return (
         <div>
             <img src={error} alt="" />
-            <Link to="/"><button className='block mx-auto bg-blue-400 p-3 rounded-md'>Back to Home</button></Link>
+            <Link to="/"><button className='block mx-auto bg-blue-400 p-3 rounded-md'>Back to Home.</button></Link>
         </div>
     );
 };
