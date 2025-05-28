@@ -8,13 +8,13 @@ const ServiceOrder = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch("https://pro-cleaning-server-alpha.vercel.app/userData")
+        fetch("http://localhost:8000/userData")
             .then(res => res.json())
             .then(data => setData(data))
     }, []);
 
     const deleteHandle = (id) => {
-        axios.delete(`https://pro-cleaning-server-alpha.vercel.app/userData/${id}`)
+        axios.delete(`http://localhost:8000/userData/${id}`)
         .then(res => {console.log(res)
         })
         .catch(err => console.log(err));

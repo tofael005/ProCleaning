@@ -17,7 +17,7 @@ const Navbar = () => {
                     <div className='flex items-center gap-4'>
                         <div className='flex items-center gap-2'>
                             <FiPhoneCall className='text-lg text-green-700' />
-                            <p>01844 286586</p>
+                            <p>01234567890</p>
                         </div>
                         <div className='flex items-center gap-2'>
                             <MdOutlineEmail className='text-lg text-green-700' />

@@ -21,7 +21,7 @@ const ServiceDetails = () => {
     }
     console.log(usersData)
 
-    fetch("https://pro-cleaning-server-alpha.vercel.app/userData", {
+    fetch("http://localhost:8000/userData", {
       method: "POST",
       headers: {
         "content-type": "application/json"
