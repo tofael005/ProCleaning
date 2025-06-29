@@ -2,7 +2,7 @@ import React from 'react';
 import about from "../assets/product/About.jpeg"
 import { MdOutlineCleaningServices } from "react-icons/md";
 import { SiCcleaner } from "react-icons/si";
-import logo from "../assets/product/pro8.jpeg"
+import logo from "../assets/team/Screenshot 2025-06-04 at 12.08.41 AM.png"
 import { Link } from 'react-router';
 import Map from './Map';
 
@@ -40,7 +40,7 @@ const About = () => {
                         <div className='flex gap-2 items-center'>
                             <img className='w-[60px] h-[60px] rounded-full' src={logo} alt="" />
                             <div>
-                                <h1 className='font-bold text-xl'>Mayaboti</h1>
+                                <h1 className='font-bold text-xl'>Jems Bridon</h1>
                                 <p className='text-sm'>Co-founder</p>
                             </div>
                         </div>

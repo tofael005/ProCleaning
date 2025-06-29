@@ -7,6 +7,12 @@ const ServiceDetails = () => {
   const [from_email, setFrom_email] = useState("");
   const [from_massage, setFrom_massage] = useState("");
   const [from_number, setFrom_number] = useState("")
+  const [from_service, setFrom_service] = useState("");
+
+
+  const handleChange = (e) => {
+    setFrom_service(e.target.value);
+  };
 
   const handlSubmit = async (e) => {
     e.preventDefault();
@@ -15,9 +21,10 @@ const ServiceDetails = () => {
     setFrom_email("");
     setFrom_number("");
     setFrom_massage("");
+    setFrom_service("");
 
     const usersData = {
-      from_name, from_email, from_massage, from_number
+      from_name, from_email, from_massage, from_number, from_service
     }
     console.log(usersData)
 
@@ -73,14 +80,15 @@ const ServiceDetails = () => {
               value={from_number}
               onChange={(e) => setFrom_number(e.target.value)} placeholder="Enter number*" required /><br />
 
-            <select className="p-2 w-full md:p-3 rounded text-black">
-              <option>Type of service</option>
-              <option>Home Cleaning</option>
-              <option>Office Cleaning</option>
-              <option>Window Cleaning</option>
-              <option>Bathroom Cleaning</option>
-              <option>BED & MATTRES Cleaning</option>
-              <option>HOME SERVICE</option>
+            <select value={from_service}
+              onChange={handleChange}
+              name="from_service" className="p-2 w-full md:p-3 rounded text-black">
+
+              <option value=" ">Type of service</option>
+              <option value="Home Cleaning">Home Cleaning</option>
+              <option value="Office Cleaning">Office Cleaning</option>
+              <option value="Window Cleaning">Window Cleaning</option>
+              <option value="Bathroom Cleaning">Bathroom Cleaning</option>
             </select>
 
 

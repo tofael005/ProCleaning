@@ -33,7 +33,7 @@ const TeamMember = () => {
                     <img className='rounded-md h-[300px]' src={member3} alt="" />
                     <div className='text-center'>
                         <h1 className='text-2xl text-green-600 font-bold my-1'>Perly Wilions</h1>
-                        <p>Sales Exicutive</p>
+                        <p>Sales Executive</p>
                     </div>
                 </div>
 

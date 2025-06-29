@@ -25,7 +25,7 @@ const Contact = () => {
         }
         console.log(usersData)
 
-        fetch("http://localhost:8000/userData", {
+        fetch("http://localhost:8000/customerData", {
             method: "POST",
             headers: {
                 "content-type": "application/json"

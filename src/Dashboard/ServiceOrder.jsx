@@ -46,9 +46,10 @@ const ServiceOrder = () => {
                             <th className="py-3 border-white border-collapse border-2 text-white">NAME</th>
                             <th className="py-3 border-white border-collapse border-2 text-white">EMAIL</th>
                             <th className="py-3 border-white border-collapse border-2 text-white">NUMBER</th>
+                            <th className="py-3 border-white border-collapse border-2 text-white">SERVICE</th>
                             <th className="py-3 border-white border-collapse border-2 text-white">PRICE</th>
-                            <th className="py-3 border-white border-collapse border-2 text-white">MASSAGE</th>
                             <th className="py-3 border-white border-collapse border-2 text-white">DETAILS</th>
+                            <th className="py-3 border-white border-collapse border-2 text-white">ACTION</th>
                         </tr>
                     </thead>
                     <tbody className="text-sm font-light">
@@ -59,9 +60,10 @@ const ServiceOrder = () => {
                                     <td className="border-2 border-white text-center p-2 bg-gray-200 font-semibold">{data.from_name}</td>
                                     <td className="border-2 border-white text-center p-2 bg-gray-200 font-semibold">{data.from_email}</td>
                                     <td className="border-2 border-white text-center p-2 bg-gray-200 font-semibold">{data.from_number}</td>
-                                    <td className="border-2 border-white text-center p-2 bg-gray-200 font-semibold">BDT: {data.from_number}</td>
+                                    <td className="border-2 border-white text-center p-2 bg-gray-200 font-semibold">{data.from_service}</td>
+                                    <td className="border-2 border-white text-center p-2 bg-gray-200 font-semibold">BDT: 2900</td>
                                     <td className="border-2 border-white text-center p-2 bg-gray-200 font-semibold">{data.from_massage}</td>
-                                    <td className="border-2 border-white text-center p-2 bg-gray-200 font-semibold">
+                                    <td className="border-2 flex items-center gap-4 border-white text-center p-2 bg-gray-200 font-semibold">
                                         <button onClick={() => deleteHandle(data._id)}>
                                             <MdDeleteForever className="text-4xl hover:bg-red-500 p-1 rounded-md hover:text-white duration-300" />
                                         </button>

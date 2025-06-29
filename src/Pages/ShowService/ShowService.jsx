@@ -6,11 +6,11 @@ import ser3 from "../../assets/product/pro3.jpg"
 import ser4 from "../../assets/product/pro4.jpg"
 import ser6 from "../../assets/product/pro6.webp"
 import ser7 from "../../assets/product/pro7.jpg"
-import ser8 from "../../assets/product/pro8.jpeg"
+
 
 const ShowService = () => {
 
-
+  const 
   return (
     <div>
       <div className="py-5">
@@ -121,8 +121,6 @@ const ShowService = () => {
           </div>
 
         </div>
-
-
       </div>
     </div>
   );
